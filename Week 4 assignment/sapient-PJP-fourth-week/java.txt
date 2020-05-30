@@ -1,0 +1,48 @@
+Addition br = new Addition();
+
+Addition() is the object which is created inside the heap
+
+br is the reference which is stored in stack having address of addition() object
+
+garbage collection - reclaiming the runtime unused memory automatically 
+
+if there is no reference referring to object, then only object will go for garbage collection, otherwise will present in the memory untill system is switched off
+
+like -> free(br) , ob = null 
+
+destructor is executed before the object went to garbage collection...executed within its scope and implements dispose techique
+we need to free the references so that object go for garbage collection and execute destructor 
+
+Dispose technique prevents starvation. Whatever resources we have used must be closed in destructor call. 
+
+destructor in java - finalize() method
+
+inheritance - resusability of code 
+
+Arithmetic class for both addition and substraction
+
+runtime polymorphism or dynamic binding
+virtual function 
+
+tightly and loosely coupled technique
+
+overloading 
+overiding 
+in c++ -> we have scope resolution operator 
+super.display 
+
+scope of varibale 
+static variable in Class Scope, all instances/objects will have the same copy
+otherwise different copy 
+
+
+
+
+
+
+
+
+
+
+
+

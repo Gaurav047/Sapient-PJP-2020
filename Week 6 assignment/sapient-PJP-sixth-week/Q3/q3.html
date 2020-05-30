@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Basic Calculator</title>
+	<link rel="stylesheet" type="text/css" href="q3.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script> 
+         //function that display value 
+         function dis(val) 
+         { 
+             document.getElementById("result").value+=val 
+         } 
+         function solve() 
+         { 
+             let x = document.getElementById("result").value 
+             let y = eval(x) 
+             document.getElementById("result").value = y 
+         } 
+         function clr() 
+         { 
+             document.getElementById("result").value = "" 
+         } 
+      </script> 
+</head>
+<body>
+<body> 
+	<div class="container">
+	 <h1 style="text-align: center;">Basic Calculator</h1>
+     <table> 
+         <tr> 
+            <td  class="table_cls" colspan="3"><input type="text" id="result"/></td> 
+            <td class="table_cls" ><input type="button" value="c" class="btn" onclick="clr()"/> </td> 
+         </tr> 
+         <tr> 
+            <td class="table_cls" ><button  class="btn" onclick="dis('1')">1</button></td> 
+            <td class="table_cls" ><button  class="btn" onclick="dis('2')">2</button></td> 
+            <td class="table_cls" ><button  class="btn" onclick="dis('3')">3</button></td> 
+            <td class="table_cls" ><button  class="btn" onclick="dis('/')">/</button></td> 
+         </tr> 
+         <tr> 
+            <td class="table_cls" ><button  class="btn" onclick="dis('4')">4</button></td> 
+            <td class="table_cls" ><button  class="btn" onclick="dis('5')">5</button></td> 
+            <td class="table_cls" ><button  class="btn" onclick="dis('6')">6</button></td> 
+            <td class="table_cls" ><button  class="btn" onclick="dis('-')">-</button></td> 
+         </tr> 
+         <tr> 
+            <td class="table_cls" ><button  class="btn" onclick="dis('7')">7</button></td> 
+            <td class="table_cls" ><button  class="btn" onclick="dis('8')">8</button></td> 
+            <td class="table_cls" ><button  class="btn" onclick="dis('9')">9</button></td> 
+            <td class="table_cls" ><button  class="btn" onclick="dis('+')">+</button></td> 
+         </tr> 
+         <tr> 
+            <td class="table_cls" ><button  class="btn" onclick="dis('.')">.</button></td> 
+            <td class="table_cls" ><button  class="btn" onclick="dis('0')">0</button></td> 
+            <!-- solve function call function solve to evaluate value -->
+            <td class="table_cls" ><button  class="btn" onclick="solve()">=</button></td> 
+            <td class="table_cls" ><button  class="btn" onclick="dis('*')">*</button></td> 
+         </tr> 
+      </table> 
+     </div>
+   </body> 
+</body>
+</html>
